@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a92acb2-e707-4a66-9c73-ffeedcbdbb14" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/textclassifier/settings/production.py" afterPath="$PROJECT_DIR$/textclassifier/settings/production.py" />
+      <change beforePath="$PROJECT_DIR$/textclassifier/settings/__init__.py" afterPath="$PROJECT_DIR$/textclassifier/settings/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="production.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/textclassifier/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -114,14 +114,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/textclassifier/settings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,8 +165,8 @@
         <option value="$PROJECT_DIR$/textclassifier/settings/local.py" />
         <option value="$PROJECT_DIR$/textclassifier/settings/base.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/textclassifier/settings/__init__.py" />
         <option value="$PROJECT_DIR$/textclassifier/settings/production.py" />
+        <option value="$PROJECT_DIR$/textclassifier/settings/__init__.py" />
       </list>
     </option>
   </component>
@@ -622,20 +620,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/textclassifier/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/textclassifier/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textclassifier/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

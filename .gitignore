@@ -1,3 +1,5 @@
+textclassifier/settings/local.py
+db.sqlite3
 *.py[cod]
 .DS_Store
 __pycache__/

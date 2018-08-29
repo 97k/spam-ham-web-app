@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% include "base/css.html" %}
+{#    <link rel="stylesheet" href="{% static "base/css.html" %}">#}
+    {% block base_head %}{% endblock %}
+  </head>
+  <body background="https://www.ingadgetnepal.com/wp-content/uploads/2017/08/dark-gradient.jpg" class="body">
+    {% include "base/navbar.html" with base_name='SpamHam' %}
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

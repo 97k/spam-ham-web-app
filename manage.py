@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import os
 import sys
-from utils import text_process
 
 if __name__ == "__main__":
+    from utils import text_process
+
+
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "textclassifier.settings")
     try:
         from django.core.management import execute_from_command_line

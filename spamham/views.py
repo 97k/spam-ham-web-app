@@ -14,11 +14,12 @@ from manage import importPipelines
 def home(request):
     if request.method == 'POST':
         message = request.POST.get('message')
+        message_cp = message
         message = [message]
         message = text_process(message)
         message = [' '.join(message)]
         result, accuracy = predict(message)
-        return render(request, 'home.html', {'result': result, 'message': message[0], 'accuracy': accuracy})
+        return render(request, 'home.html', {'result': result, 'message': message_cp, 'accuracy': accuracy})
 
     return render(request, 'home.html')
 
@@ -55,7 +56,7 @@ def predict(message):
     elif value_spam > 0.5 or value_spam_second > 0.5:
         value = math.fabs(test_second_prob[0][1] - test_prob[0][1])
 
-        if max(value_spam, value_spam_second) > max(value_ham, value_ham_second):
+        if max(value_spam, value_spam_second) + 0.1 > max(value_ham, value_ham_second):
             accuracy = max(value_spam, value_spam_second)
             result = 'spam'
         else:

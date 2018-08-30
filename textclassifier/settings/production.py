@@ -36,7 +36,7 @@ MANAGERS = ADMINS
 SECRET_KEY = os.environ.get('SECRET_KEY', 'pdk&99$ou9^um8-xyb&q)==r)sa##(ef3w-lkrmqoe)9r17p&y')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['spamham.herokuapp.com']
 

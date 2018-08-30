@@ -16,6 +16,7 @@ def home(request):
         message = request.POST.get('message')
         message = [message]
         message = text_process(message)
+        message = [' '.join(message)]
         result, accuracy = predict(message)
         return render(request, 'home.html', {'result': result, 'message': message[0], 'accuracy': accuracy})
 

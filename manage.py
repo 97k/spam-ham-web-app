@@ -1,10 +1,19 @@
 #!/usr/bin/env python
 import os
 import sys
+import pickle
+from utils import text_process
+
+
+def importPipelines():
+    pipeline = pickle.load(open('text_clf_pipeline.pkl', 'rb'))
+    pipeline_second = pickle.load(open('spam_clf_model_pipeline_final_second.pkl', 'rb'))
+    return pipeline, pipeline_second
+
 
 if __name__ == "__main__":
-    from utils import text_process
 
+    pipeline, pipeline_seond = importPipelines()
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "textclassifier.settings")
     try:

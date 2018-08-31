@@ -33,7 +33,7 @@ MANAGERS = ADMINS
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'pdk&99$ou9^um8-xyb&q)==r)sa##(ef3w-lkrmqoe)9r17p&y')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'pdk&99$ou9^um8-xyb&q)==r5)sa##6(ef3w-lkrmqoe87)9r17p&y')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False

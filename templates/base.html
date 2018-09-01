@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-{% load static%}
+{% load static %}
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
     {% include "base/css.html" %}
-{#    <link rel="stylesheet" href="{% static "base/css.html" %}">#}
+    {#    <link rel="stylesheet" href="{% static "base/css.html" %}">#}
     {% block base_head %}{% endblock %}
-  </head>
-  <body background="https://www.ingadgetnepal.com/wp-content/uploads/2017/08/dark-gradient.jpg" class="body">
-    {% include "base/navbar.html" with base_name='SpamHam' %}
-    <div class="container">
-      {% block content %}
-      {% endblock %}
-    </div>
-  </body>
+    <script>
+        function scrollDown() {
+            document.getElementById('scroll').scrollTop = document.getElementById('scroll').scrollHeight
+            console.log('functionis called!');
+            window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
+        }
+    </script>
+
+</head>
+<body background="https://www.ingadgetnepal.com/wp-content/uploads/2017/08/dark-gradient.jpg" class="body">
+{% include "base/navbar.html" with base_name='SpamHam' %}
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+
 </html>

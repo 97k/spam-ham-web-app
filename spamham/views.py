@@ -19,6 +19,7 @@ def home(request):
         message = text_process(message)
         message = [' '.join(message)]
         result, accuracy = predict(message)
+        print('result is ', result, 'with accuracy ', accuracy)
         return render(request, 'home.html', {'result': result, 'message': message_cp, 'accuracy': accuracy})
 
     return render(request, 'home.html')
@@ -65,5 +66,20 @@ def predict(message):
     else:
         result = 'ham'
         accuracy = max(value_ham, value_ham_second)
+
+    accuracy = round(accuracy, 2) * 100
+
+    print('final result', result, accuracy)
+
+    if result == 'spam':
+        if accuracy > 80:
+            result = 'very likely a spam'
+        else:
+            result = 'less likely a spam'
+
+    elif accuracy > 80:
+        result = 'very likely a ham'
+    else:
+        result = 'less likely a ham'
 
     return result, accuracy

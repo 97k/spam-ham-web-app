@@ -1,0 +1,1 @@
+web: gunicorn textclassifier.wsgi

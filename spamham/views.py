@@ -67,7 +67,7 @@ def predict(message):
         result = 'ham'
         accuracy = max(value_ham, value_ham_second)
 
-    accuracy = round(accuracy, 2) * 100
+    accuracy = round(accuracy, 3) * 100
 
     print('final result', result, accuracy)
 
